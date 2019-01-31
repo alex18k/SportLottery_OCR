@@ -17,8 +17,8 @@ namespace wxAPI2.Com
         {
             // 调用通用文字识别（高精度版），可能会抛出网络等异常，请使用try/catch捕获
             var image = File.ReadAllBytes(img);
-            var ApiKey = "3mktMVNFQXCLYoFbUz9l9IAv";
-            var SecretKey = "oQDmVWI9LGYic3dUMDvL2fjtTGZZx877";
+            var ApiKey = "ApiKey";
+            var SecretKey = "SecretKey";
             var client = new Baidu.Aip.Ocr.Ocr(ApiKey, SecretKey);
             var result = client.AccurateBasic(image);
             return result;
@@ -28,8 +28,8 @@ namespace wxAPI2.Com
             // 自定义模板识别
 
             var image = File.ReadAllBytes(img);
-            var ApiKey = "3mktMVNFQXCLYoFbUz9l9IAv";
-            var SecretKey = "oQDmVWI9LGYic3dUMDvL2fjtTGZZx877";
+            var ApiKey = "ApiKey";
+            var SecretKey = "SecretKey";
             //var templateSign = "b3153a0a3890abcf78ed3338a3f1a4eb";
             var templateSign = "86b6e4bbf2ad15045d4d2be6d2f263fe";
             var client = new Baidu.Aip.Ocr.Ocr(ApiKey, SecretKey);
